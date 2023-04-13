@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(223, 47%, 23%);
+    font-size: 1rem;
+}
+
+main {
+    margin: 5em auto;
+    max-width: 375px;
+    border-radius: 17px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 14px 30px 0px rgba(0,0,0,0.1);
+}
+
+.content {
+    padding: 1.5em;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+/* ===============================
+             TYPOGRAPHY
+================================== */
+
+.title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.body-text {
+    color: hsl(224, 23%, 55%);
+    padding: 0 2em;
+    line-height: 1.7em;
+    margin-bottom: 2em;
+}
+
+.price {
+    color: hsl(224, 23%, 55%);
+    margin-top: 0.3em;
+}
+
+a {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* ===============================
+             FLEX DIV
+================================== */
+
+.flex-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 18px;
+    margin-bottom: 2em;
+}
+
+.flex-div img {
+    width: auto;
+}
+
+.annual-plan {
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.price-div {
+    margin-right: 3.5em;
+}
+
+/* ===============================
+             BUTTONS
+================================== */
+
+button {
+    font-family: inherit;
+    margin-bottom: 2em;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.payment-btn {
+    width: 100%;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    padding: 1.1em;
+    font-weight: bold;
+    border-radius: 9px;
+    box-shadow: 0px 22px 15px 0px rgba(0,0,0,0.1);
+    transition: opacity 0.3s;
+}
+
+.payment-btn:hover,
+.payment-btn:focus,
+.payment-btn:active {
+    opacity: 0.7;
+}
+
+.cancel-btn {
+    border: none;
+    background: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus,
+.cancel-btn:active {
+    color: hsl(223, 47%, 23%);
+}
+
+/* ===============================
+            MEDIA QUERY
+================================== */
+
+@media (min-width: 400px) {
+    body {
+        height: 100vh;
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+}
